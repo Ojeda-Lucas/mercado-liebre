@@ -1,0 +1,233 @@
+@import url('./header.css');
+@import url('./footer.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    background-color: #ebebeb;
+}
+.crea-cuenta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.crea-cuenta input{
+    background-color: white;
+    width: 90vw;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.titulos{
+    width: 90%;
+    margin: 0.5rem 0;
+}
+.comp{
+    display: flex;
+    align-items: center;
+}
+.vend{
+    display: flex;
+    align-items: center;
+}
+.comp input{
+    width: max-content;
+}
+.vend input{
+    width: max-content;
+}
+#boton-enviar{
+    background-color: white;
+}
+.none{
+    display: none;
+}
+.agrandar{
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+.user{
+    width: 100%;
+}
+.check-box{
+    display: flex;
+    align-items: center;
+}
+.check-box input{
+    max-width: min-content;
+}
+.checks{
+    width: 90%;
+}
+.checks label{
+    width: 6rem;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+.enviar-borrar{
+    font-size: 2rem;
+    color: white;
+    background-color: #1259c3;
+    margin: 0 0 1rem 0;
+    width: 10%;
+    width: max-content;
+    cursor: pointer;
+}
+.ingresar-foto{
+    padding: 0 0 0 1rem;
+}
+#nacio{
+    cursor: pointer;
+}
+.label-comp{
+    cursor: pointer;
+}
+.label-vend{
+    cursor: pointer;
+}
+.check-box{
+    width: min-content;
+}
+.check-box input{
+    cursor: pointer;
+}
+.comp-vend input{
+    cursor: pointer;
+}
+footer i:hover{
+    color: #0022AA;
+    transition: 1s;
+}
+.check-box{
+    cursor: pointer;
+}
+.check-box label{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 425px){
+    /* mobile */
+    main article{
+        box-shadow: none;
+    }
+    .barra-de-navegacion a{
+        display: none;
+    }
+    .descripcion{
+        display: none;
+    }
+    header section{
+        display: flex;
+        flex-direction: column;
+    }
+    .lupa{
+        margin: 0 0.6rem 0 0;
+        padding: 0.4rem;
+        border-radius: 0 0.4rem 0.4rem 0;
+    }
+    .header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo{
+        width: 45%;
+        flex-grow: 1;
+    }
+    .barra-busqueda{
+        width: 72%;
+        padding: 0.4rem;
+        border-radius: 0.4rem 0 0 0.4rem;
+        flex-grow: 1;
+        width: 40vw;
+    }
+    .search{
+        flex-grow: 1;
+    }
+    .label-comp{
+        width: 6rem;
+    }
+    .label-vend{
+        width: 6rem;
+    }
+}
+
+@media screen and (min-width: 426px){
+    /* tablet */
+    .burger-menu{
+        display: none;
+    }
+    .barra-de-navegacion{
+        display: flex;
+        width: 17.5rem;
+        justify-content: space-between;
+    }
+    .barra-de-navegacion a{
+        margin: 0 2%;
+    }
+    .section-navegacion{
+        padding: 0 1rem;
+    }
+    .barra-busqueda{
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+    .articulos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .articulos article{
+        width: 40%;
+    }
+    .logo{
+        max-width: 33.3%;
+    }
+    .mano p{
+        padding: 0 2rem;
+        width: 33.3vw;
+        margin-left: 1rem;
+    }
+    .search input{
+        padding: 1rem;
+        flex-grow: 1;
+    }
+    .search{
+        flex-grow: 1;
+        width: 40vw;
+    }
+    .lupa{
+        margin: 0;
+        border-radius: 0 0.4rem 0.4rem 0;
+        padding: 1rem;
+    }
+    .comp-vend{
+        display: flex;
+        padding: 0 0 0 1rem;
+    }
+    .label-comp{
+        margin: 0 1rem 0 0;
+    }
+    .label-vend{
+        margin: 0 1rem 0 0;
+    }
+    #comprador{
+        margin: 0 2rem 0 0
+    }
+    .div-footer i:hover{
+        color: #0022AA;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    /* desktop */
+    .articulos article{
+        width: 20%;
+    }
+}

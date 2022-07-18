@@ -1,0 +1,257 @@
+@import url('./header.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #ebebeb;
+}
+body main{
+    text-align: center;
+}
+body main section{
+    display: flex;
+    flex-direction: column;
+}
+main article{
+    background-color: white;
+    margin: 0.63rem;
+    transition: box-shadow;
+}
+picture.banner img{
+    display: flex;
+    width: 100%;
+}
+picture img{
+    max-width: 100%;
+}
+h2{
+    display: flex;
+    font-size: 1.5rem;
+    color: #666;
+    padding:0 0 0 2%;
+}
+.precio{
+    font-size: 1.13rem;
+    color: black;
+    min-width: max-content;
+}
+.descuento{
+    font-size: 1rem;
+    color: #39b54a;
+    flex-grow: 1;
+    width: 100%;
+}
+.descripcion{
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0.94rem 0.94rem;
+    color: #666;
+}
+
+
+.camion{
+    color: #39b54a;
+    display: block;
+    font-size: 1rem;
+    padding: 0.31rem;
+    width: 1.88rem;
+    height: 1.88rem;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    order: 1;
+    position: absolute;
+    right: 1.25rem;
+    top: -0.94rem;
+}
+.caja{
+    display: flex;
+    border-top: 0.06rem solid #ebebeb;
+    padding: 0.94rem;
+    position: relative;
+}
+.div-footer i{
+    padding: 0 0 0.625rem 0;
+}
+.div-footer i{
+    transition: color 1s;
+}
+
+
+.producto{
+    position: relative;
+    height: fit-content;
+}
+
+
+@keyframes agrandar {
+    0%{
+        padding-bottom: 1rem;
+    }
+    100%{
+        padding-bottom: 3rem;
+    }
+}
+
+@keyframes achicar {
+    0%{
+        padding-bottom: 3rem;
+    }
+    100%{
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 425px){
+    /* mobile */
+    main article{
+        box-shadow: none;
+    }
+    .barra-de-navegacion a{
+        display: none;
+    }
+    .descripcion{
+        display: none;
+    }
+    header section{
+        display: flex;
+        flex-direction: column;
+    }
+    .lupa{
+        margin: 0 0.6rem 0 0;
+        padding: 0.4rem;
+        border-radius: 0 0.4rem 0.4rem 0;
+    }
+    .header{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 45%;
+        flex-grow: 1;
+    }
+    .barra-busqueda{
+        width: 72%;
+        padding: 0.4rem;
+        border-radius: 0.4rem 0 0 0.4rem;
+        flex-grow: 1;
+        width: 40vw;
+    }
+    .header{
+        justify-content: center;
+    }
+    .search{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 426px){
+    /* tablet */
+    .burger-menu{
+        display: none;
+    }
+    .barra-de-navegacion{
+        display: flex;
+        width: 17.5rem;
+        justify-content: space-between;
+    }
+    .barra-de-navegacion a{
+        margin: 0 2%;
+    }
+    .section-navegacion{
+        padding: 0 1rem;
+    }
+    .barra-busqueda{
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+    .articulos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .articulos article{
+        width: 40%;
+    }
+    .logo{
+        max-width: 33.3%;
+    }
+    .mano p{
+        padding: 0 2rem;
+        width: 33.3vw;
+        margin-left: 1rem;
+    }
+    .search input{
+        padding: 1rem;
+        flex-grow: 1;
+    }
+    .search{
+        flex-grow: 1;
+        width: 40vw;
+    }
+    .lupa{
+        margin: 0;
+        border-radius: 0 0.4rem 0.4rem 0;
+        padding: 1rem;
+    }
+    main article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 0.5s;
+    }
+    main article{
+        transition: 0.5s;
+    }
+    main article:hover .camion{
+        transform: rotate(-90deg);
+        transition: 1s;
+    }
+    main article .camion{
+        transition: 1s;
+    }
+    div.mostrar{
+        position: absolute;
+        background: white;
+        bottom: 0;
+        width: 100%;
+        opacity: 0;
+        transition: 1s;
+    }
+    main article:hover div.mostrar{
+        opacity: 100%;
+    }
+    main article:hover div.caja{
+        animation: agrandar 1s forwards;
+        padding-bottom: 3rem;
+        transition: 1s;
+    }
+    main article div .mostrar{
+        padding-bottom: 0;
+        transition: 1s;
+    }
+    main article div.caja{
+        animation: achicar 1s forwards;
+    }
+    footer i:hover{
+        color: #0022AA;
+        transition: 1s;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px){
+    /* desktop */
+    .articulos article{
+        width: 20%;
+    }
+    .div-footer{
+        display: flex;
+    }
+}
