@@ -7,6 +7,9 @@
     border: none;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background: #ebebeb;
+}
 main{
     background-color: #ebebeb;
 }
@@ -35,9 +38,11 @@ main{
 }
 .comp input{
     width: max-content;
+    cursor: pointer;
 }
 .vend input{
     width: max-content;
+    cursor: pointer;
 }
 #boton-enviar{
     background-color: white;
@@ -58,6 +63,7 @@ main{
 }
 .check-box input{
     max-width: min-content;
+    cursor: pointer;
 }
 .checks{
     width: 90%;
@@ -81,9 +87,6 @@ main{
 .ingresar-foto{
     padding: 0 0 0 1rem;
 }
-#nacio{
-    cursor: pointer;
-}
 .label-comp{
     cursor: pointer;
 }
@@ -96,19 +99,13 @@ main{
 .check-box input{
     cursor: pointer;
 }
-.comp-vend input{
+#comprador{
     cursor: pointer;
 }
-footer i:hover{
-    color: #0022AA;
-    transition: 1s;
-}
-.check-box{
+#vendedor{
     cursor: pointer;
 }
-.check-box label{
-    cursor: pointer;
-}
+
 
 
 @media screen and (max-width: 425px){
@@ -134,7 +131,6 @@ footer i:hover{
     .header{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
     }
     .logo{
         width: 45%;
@@ -146,6 +142,9 @@ footer i:hover{
         border-radius: 0.4rem 0 0 0.4rem;
         flex-grow: 1;
         width: 40vw;
+    }
+    .header{
+        justify-content: center;
     }
     .search{
         flex-grow: 1;
@@ -219,10 +218,11 @@ footer i:hover{
     #comprador{
         margin: 0 2rem 0 0
     }
-    .div-footer i:hover{
+    footer i:hover{
         color: #0022AA;
         transition: 1s;
     }
+    
 }
 
 @media screen and (min-width: 1280px){
