@@ -15,12 +15,12 @@ main{
 }
 main input{
     margin: 1rem;
-    width: 60%;
+    width: 90%;
     padding: 1rem;
 }
 .enviar{
     margin: 1rem;
-    width: 60%;
+    width: 90%;
     padding: 1rem;
     color: white;
     font-size: 1rem;
