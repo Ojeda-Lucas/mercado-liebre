@@ -29,3 +29,8 @@ server.get("/login", function (req, res) {
   file = path.join(__dirname, "views", "login.html");
   res.sendFile(file);
 });
+
+server.post("/", function (req, res) {
+  file = path.join(__dirname, "views", "home.html");
+  res.sendFile(file);
+});
